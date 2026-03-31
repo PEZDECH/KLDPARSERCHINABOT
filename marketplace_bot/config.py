@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     )
 
     # Telegram Bot
-    bot_token: str = Field(8480782446:AAEG-gokq9lWIFLexfO6Op5eMB3EeKK-O9g, description="Telegram bot token from @BotFather")
+    bot_token: str = Field(..., description="Telegram bot token from @BotFather")
 
     # Database
     database_url: str = Field(
